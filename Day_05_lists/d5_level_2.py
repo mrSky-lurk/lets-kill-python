@@ -3,6 +3,7 @@
 # ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
 # Sort the list and find the min and max age
 # ================================================================================================================
+from data_util import country_list
 ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
 max_age = sorted(ages)[-1]
 min_age = sorted(ages)[0]
@@ -40,7 +41,6 @@ print("Comparing the value of (min - average) and (max - average):: ", abs((max_
 
 # Find the middle country(ies) in the countries list
 # ================================================================================================================
-import country_list
 country_list.countries.append("Deccan")
 len_countrylist = len(country_list.countries)
 print(len_countrylist)
@@ -53,14 +53,14 @@ else:
 # ================================================================================================================
 print("Initial length:: ", len(country_list.countries))
 if len_countrylist % 2 == 0:
-    first_list = country_list.countries[0:int(len_countrylist/2)]
+    first_list = country_list.countries[0:int(len_countrylist / 2)]
     print(len(first_list))
-    second_list = country_list.countries[int(len_countrylist/2):]
+    second_list = country_list.countries[int(len_countrylist / 2):]
     print(len(second_list))
 else:
-    first_list = first_list = country_list.countries[0:int(len_countrylist/2 +1)]
+    first_list = country_list.countries[0:int(len_countrylist / 2 + 1)]
     print(len(first_list))
-    second_list = country_list.countries[int(len_countrylist/2 +1):]
+    second_list = country_list.countries[int(len_countrylist / 2 + 1):]
     print(len(second_list))
 
 # ['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']. Unpack the first three countries and the rest as scandic countries.

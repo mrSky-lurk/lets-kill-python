@@ -91,7 +91,7 @@ print("Last 3 companies:: ", it_companies[-3:])
 # ================================================================================================================
 # it_companies.append("LOCO")
 print(it_companies)
-if (len(it_companies) % 2 == 0):
+if len(it_companies) % 2 == 0:
     print("Mid Companies:: ", it_companies[int(len(it_companies) / 2) - 1:int(len(it_companies) / 2) + 1])
 else:
     print("Mid Companies:: ", it_companies[int(len(it_companies) / 2)])
@@ -105,7 +105,7 @@ print("Removed first company:: ", it_companies)
 # ==========================================================================================================================
 print("Initial list:: ", it_companies)
 popped_index = int(len(it_companies) / 2)
-if (len(it_companies) % 2 != 0):
+if len(it_companies) % 2 != 0:
     print("Removing:: ", it_companies.pop(int(len(it_companies) / 2)))
 else:
     print("Removing:: ", it_companies.pop(int(len(it_companies) / 2)))
