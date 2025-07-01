@@ -53,7 +53,7 @@ def calculate_mean(num_list):
     print("Mean:: ", sum(num_list) / len(num_list))
 
 
-def calculate_median(num_list:list):
+def calculate_median(num_list: list):
     num_list.sort()
     mid = 0
     if len(num_list) % 2 == 0:
@@ -62,40 +62,45 @@ def calculate_median(num_list:list):
         mid = num_list[int(len(num_list) / 2)]
     print("Median:: ", mid)
 
+
 from collections import Counter
-def calculate_mode(num_list:list):
+
+
+def calculate_mode(num_list: list):
     counter_map = dict(Counter(num_list))
-    counter_map = sorted(counter_map.items(), key=lambda item:item[1], reverse=True)
+    counter_map = sorted(counter_map.items(), key=lambda item: item[1], reverse=True)
     print(counter_map)
     mode = list()
     if counter_map[0][1] > 1:
         temp = counter_map[0][1]
         mode.append(counter_map[0][0])
-        for index in range(1,len(counter_map)):
+        for index in range(1, len(counter_map)):
             if counter_map[index][1] == temp:
                 mode.append(counter_map[index][0])
             else:
                 break
-    print("Mode: ",mode)
+    print("Mode: ", mode)
 
-def calculate_range(num_list:list):
+
+def calculate_range(num_list: list):
     num_list.sort()
-    print("Range:: ", num_list[len(num_list)-1] - num_list[0])
+    print("Range:: ", num_list[len(num_list) - 1] - num_list[0])
 
 
 import statistics
-def calculate_varience(num_list:list):
+
+
+def calculate_varience(num_list: list):
     print("Varience::", statistics.variance(num_list))
     return statistics.variance(num_list)
 
 
-
-def calculate_std_deviation(num_list:list):
-    print("Std Deviation::",math.sqrt((calculate_varience(num_list))))
+def calculate_std_deviation(num_list: list):
+    print("Std Deviation::", math.sqrt((calculate_varience(num_list))))
 
 
 calculate_mean([2, 4, 6, 8, 10])
 calculate_median([2, 4, 6, 8, 10, 12])
-calculate_mode([2, 4, 6, 8, 12,12,6,6,12,8,8])
+calculate_mode([2, 4, 6, 8, 12, 12, 6, 6, 12, 8, 8])
 calculate_varience([2, 4, 6, 8, 10, 12])
 calculate_std_deviation([2, 4, 6, 8, 10, 12])
