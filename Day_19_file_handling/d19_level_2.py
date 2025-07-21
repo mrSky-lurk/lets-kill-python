@@ -137,4 +137,6 @@ def read_csv_count_lines_for_keyword(keyword):
 
 
 
-print("hello ===== ",read_csv_count_lines_for_keyword("python"))
+print("python ===== ",read_csv_count_lines_for_keyword("python"))
+print("javascript ===== ",read_csv_count_lines_for_keyword("javascript"))
+print("java ===== ",read_csv_count_lines_for_keyword("java"))
