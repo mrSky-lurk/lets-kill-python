@@ -7,11 +7,12 @@
 
 from person_account import PersonAccount
 
-person = PersonAccount("Abhisek", "Chowdhury")
+person = PersonAccount("Regina", "Falange")
 person.add_income("160000.00", "Salary")
 person.add_income("160.60", "Divident")
 person.add_expense("8000.00", "Grocery")
 person.add_expense("500.00", "ATM")
 person.add_income("218.67", "Cashback")
+person.add_expense("20000.00", "Rent")
 
 person.account_info()
