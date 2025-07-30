@@ -1,0 +1,84 @@
+{
+  "variables_table:": [
+    {
+      "Variable Name": "class",
+      "Role": "Target",
+      "Type": "Categorical",
+      "Description": "",
+      "Units": "",
+      "Missing Values": "no"
+    },
+    {
+      "Variable Name": "top-left-square",
+      "Role": "Feature",
+      "Type": "Categorical",
+      "Description": "",
+      "Units": "",
+      "Missing Values": "no"
+    },
+    {
+      "Variable Name": "top-middle-square",
+      "Role": "Feature",
+      "Type": "Categorical",
+      "Description": "",
+      "Units": "",
+      "Missing Values": "no"
+    },
+    {
+      "Variable Name": "top-right-square",
+      "Role": "Feature",
+      "Type": "Categorical",
+      "Description": "",
+      "Units": "",
+      "Missing Values": "no"
+    },
+    {
+      "Variable Name": "middle-left-square",
+      "Role": "Feature",
+      "Type": "Categorical",
+      "Description": "",
+      "Units": "",
+      "Missing Values": "no"
+    },
+    {
+      "Variable Name": "middle-middle-square",
+      "Role": "Feature",
+      "Type": "Categorical",
+      "Description": "",
+      "Units": "",
+      "Missing Values": "no"
+    },
+    {
+      "Variable Name": "middle-right-square",
+      "Role": "Feature",
+      "Type": "Categorical",
+      "Description": "",
+      "Units": "",
+      "Missing Values": "no"
+    },
+    {
+      "Variable Name": "bottom-left-square",
+      "Role": "Feature",
+      "Type": "Categorical",
+      "Description": "",
+      "Units": "",
+      "Missing Values": "no"
+    },
+    {
+      "Variable Name": "bottom-middle-square",
+      "Role": "Feature",
+      "Type": "Categorical",
+      "Description": "",
+      "Units": "",
+      "Missing Values": "no"
+    },
+    {
+      "Variable Name": "bottom-right-square",
+      "Role": "Feature",
+      "Type": "Categorical",
+      "Description": "",
+      "Units": "",
+      "Missing Values": "no"
+    }
+  ]
+}
